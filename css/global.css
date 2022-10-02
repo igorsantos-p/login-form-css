@@ -1,0 +1,42 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+}
+
+h1,
+p,
+span,
+label,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cor-0 {
+  color: var(--text-base);
+}
+
+.cor-1 {
+  color: var(--text-title);
+}
+
+.cor-p1 {
+  color: var(--primary-color);
+}

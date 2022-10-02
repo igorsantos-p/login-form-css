@@ -1,0 +1,85 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  background: var(--form-background) url(../images/mail.svg) no-repeat left 10px
+    center;
+  border: 1px solid var(--text-base);
+  padding: 12px 40px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="password"] {
+  background: url(../images/lock.svg) no-repeat left 10px center,
+    url(../images/eye.svg) no-repeat right 10px center, var(--form-background);
+  border: 1px solid var(--text-base);
+  padding: 12px 40px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  background: var(--form-background) url(../images/mail-focus.svg) no-repeat left
+    10px center;
+  border: 1px solid var(--text-title);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+input[type="password"]:focus {
+  outline: none;
+  background: url(../images/lock-focus.svg) no-repeat left 10px center,
+    url(../images/eye.svg) no-repeat right 10px center, var(--form-background);
+  border: 1px solid var(--text-title);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.lembrar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lembrar::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-base);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked + label::before {
+  border: none;
+  background: var(--primary-color) url(../images/check.svg) no-repeat center;
+}
+
+form div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.botao {
+  justify-self: center;
+  margin-bottom: 20px;
+}
